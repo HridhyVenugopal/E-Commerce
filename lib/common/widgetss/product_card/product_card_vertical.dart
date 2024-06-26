@@ -115,8 +115,7 @@ class ProductCardVertical extends StatelessWidget {
                         child: const SizedBox(
                           height: TSize.iconLg * 1.2,
                           width: TSize.iconLg * 1.2,
-                          child: Center(child: Icon(Icons.add,color: TColors.white,),),
-                        ),
+                          child: Center(child: Icon(Icons.add,color: TColors.white,),),),
                       )
                     ],
                   )
