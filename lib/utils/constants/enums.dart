@@ -1,5 +1,6 @@
 ///Lists of enums
 ///they cannot create inside the class
+///NOt a Function but mostly used for comparison
 
 enum TextSizes{ small, medium, large}
 

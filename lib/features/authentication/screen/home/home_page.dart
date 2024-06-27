@@ -37,6 +37,7 @@ class HomePage extends StatelessWidget {
             title: "Popular Categories",
             showActionButton: false,
             textColor: Colors.white,
+            padding: EdgeInsets.zero,
           ),
           SizedBox(height: TSize.spaceBtwItems),
 
@@ -47,7 +48,7 @@ class HomePage extends StatelessWidget {
 
       ///Carousel Slider and the Bottom Indicator
       Padding(
-        padding: EdgeInsets.all(TSize.defaultSpace),
+        padding: const EdgeInsets.all(TSize.defaultSpace),
         child: Column(
           children: [
             const Carousel_Home(banners: [
@@ -56,11 +57,15 @@ class HomePage extends StatelessWidget {
               TImages.promoBanner3,
               TImages.promoBanner4,
             ]),
+            const SizedBox(height: TSize.spaceBtwSections),
+
+            ///Heading
+            SectionHeading(title: 'Popular Products',onPressed: (){}),
+            const SizedBox(height: TSize.spaceBtwItems),
 
             ///Product Card Vertical
-            const SizedBox(height: TSize.spaceBtwSections),
             GridLayout(
-                itemCount: 4,
+                itemCount: 5,
                 itemBuilder: (_, index) => const ProductCardVertical()),
           ],
         ),
